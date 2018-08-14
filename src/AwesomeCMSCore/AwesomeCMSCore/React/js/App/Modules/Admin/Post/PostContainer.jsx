@@ -69,7 +69,10 @@ class PostContainer extends Component {
             let postNumber = {...this.state.posts};
             postNumber.numberOfPostPublished -= 1;
             this.setState({ posts: postNumber});
-            //this.setState({ posts: [...this.state.posts.postDeleted, post]});
+
+/*             let postDeleted = {...this.state.posts};
+            postDeleted.postDeleted = [...this.state.posts.postDeleted, post];
+            this.setState({ posts: postDeleted}); */
         }
 
         else {
@@ -79,6 +82,10 @@ class PostContainer extends Component {
             let postNumber = {...this.state.posts};
             postNumber.numberOfDraftedPost -= 1;
             this.setState({ posts: postNumber });
+
+ /*            let postDeleted = {...this.state.posts};
+            postDeleted.postDeleted = [...this.state.posts.postDeleted, post];
+            this.setState({ posts: postDeleted}); */
            // this.setState({ posts: [...this.state.posts.postDeleted, post]});
         }
 
